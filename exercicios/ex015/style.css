@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+        body{
+            background-color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        
+        h1{
+            color: maroon;
+            background-color: goldenrod;
+        }
+
+        h2{
+            color:goldenrod ;
+        }
+
+        h3{
+            color:maroon;
+        }
+
+        h4{
+            color: rgb(240, 111, 68);
+        }
+
+        p{
+            text-align: justify;
+            color:black;
+        }
+   
