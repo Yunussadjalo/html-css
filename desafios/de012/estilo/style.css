@@ -52,7 +52,7 @@ section.imagem{
     color: white;
 }
 
-section p{
+section.imagem p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.296);
 }
