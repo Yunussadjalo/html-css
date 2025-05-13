@@ -129,18 +129,18 @@ main {
 }
 
 .container {
-    display: flex;
-    height: 100vh;
+    display: flex;  /* Ativa o Flexbox*/
+    height: 100vh;  /* Altura total da tela*/
 }
 
 #programacao {
-   flex: 3;
+   flex: 3; /* Ocupa 3 partes do espaço*/
    background-color: aliceblue;
    padding: 20px 
 }
 
 #barra-lateral {
-    flex: 1;
+    flex: 1;    /* Ocupa 1 parte do espaço*/
     background-color: antiquewhite;
     padding: 20px;
 }
