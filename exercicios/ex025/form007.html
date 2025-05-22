@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">  
+        <p>
+            
+            <label for="ireg">Região:</label>
+            <select name="regiao" id="ireg"> 
+
+                <option value="" selected>---Escolha---</option>
+                 <optgroup label="Zona Norte">
+                     <option value="ca">Cacheu:</option>
+                     <option value="oio">Oio:</option>
+                </optgroup>
+
+                <optgroup label="Zona Sul">
+                    <option value="qu">Quinara:</option>
+                <option value="tom">Tombali:</option>
+                </optgroup>
+
+                <optgroup label="Zona Leste">
+                    <option value="baf">Bafata:</option>
+                    <option value="gb">Gabú:</option>
+                
+                <optgroup label="Zona Oeste">
+                    <option value="bi">Biombo:</option>
+                <option value="bo">Bolama:</option>   
+                </optgroup>
+
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Informático</option>
+                <option>Eletricista</option>
+                <option>Dj</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite a sua mensagem aqui!"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">  
+        </p>
+
+    </form>
+
+    
+</body>
+</html>
