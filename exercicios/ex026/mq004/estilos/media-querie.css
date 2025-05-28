@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Todas as regras de estilo para dispositivos móveis */
+
+/*
+Typical Device Breakpoints
+--------------------------
+Smartphone: 320px - 480px
+Smartphone Portrait: 320px - 480px
+Smartphone Landscape: 481px - 768px
+----------------------------
+Tablet Portrait: 481px - 768px
+Tablet Landscape: 769px - 1024px
+----------------------------
+Computador: 769px - 1024px
+Computador Landscape: 1025px - 1200px
+Computador Portrait: 769px - 1024px
+----------------------------
+Televisão: 1025px - 1200px
+Televisão Landscape: 1201px e acima
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace; /* Fonte para impressão */   
+    }
+    
+    main{
+        border: 2px solid black; /* Borda para o main na impressão */
+        width:100vw; /* Largura total na impressão */
+    }
+
+    main h1 {
+        color: black; /* Cor do texto na impressão */
+        text-shadow: none; /* Remove sombra do texto na impressão */
+    }
+
+    main::after {
+        content: "essa impressão foi fieta através do site www.ybaba.com"; /* Texto adicional na impressão */
+        text-decoration: overline; /* Sublinha o texto adicional */
+        text-align: center;
+    
+    }
+
+    img#impressora {
+        display: block; /* Exibe a imagem da impressora na impressão */ 
+    } 
+    
+    img#fone, img#tablet, img#pc, img#tv {
+        display: none; /* Esconde todas as imagens na impressão */
+    }
+ 
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background: black url(../imagens/back-tablet.jpg) no-repeat; /* Fundo para tablets */
+        background-size: cover; /* Ajusta o tamanho do background */
+        background-position: center center; /* Centraliza o fundo */
+    }
+    
+    /* Estilos para tablets */
+    img#tablet { display: block; } /* Exibe a imagem do tablet */
+    img#fone, img#impressora, img#pc, img#tv { display: none; } /* Esconde outras imagens */
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background: black url(../imagens/back-pc.jpg) no-repeat; /* Fundo para computadores */
+        background-size: cover; /* Ajusta o tamanho do background */
+        background-position: center center; /* Centraliza o fundo */
+    }
+    /* Estilos para computadores */
+    img#fone { display: none; } /* Esconde a imagem do celular */
+    img#pc { display: block; } /* Exibe a imagem do computador */
+    img#impressora, img#tablet, img#tv { display: none; } /* Esconde outras imagens */
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background: black url(../imagens/back-tv.jpg) no-repeat; /* Fundo para televisões */
+        background-size: cover; /* Ajusta o tamanho do background */
+        background-position: center center; /* Centraliza o fundo */
+    }
+    /* Estilos para televisões */
+    img#fone, img#tablet, img#pc, img#impressora { display: none; } /* Esconde imagens de celular, tablet, computador e impressora */
+    img#tv { display: block; } /* Exibe a imagem da televisão */
+}
