@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px)  { /* 768px é o breakpoint para telas maiores, como tablets e desktops */
+    span#burguer {
+        display: none;
+    }
+    
+    menu { /* Exibe o menu como um bloco */
+        display: block;
+    }
+
+    menu > ul > li  { /* Exibe os itens do menu em linha */
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    main{ /* Ajusta a largura do main para telas maiores */
+        width: 768px;
+    }
+    
+}
