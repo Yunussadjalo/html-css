@@ -11,7 +11,7 @@
 
     menu > ul > li  { /* Exibe os itens do menu em linha */
         display: inline-block;
-        margin-right: 10px;
+        
     }
 
     main{ /* Ajusta a largura do main para telas maiores */
