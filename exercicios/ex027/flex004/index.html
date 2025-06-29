@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: #4CAF50;
+            height: 200px;
+
+            display:flex; /* Definindo o elemento como um contêiner flexível */
+            flex-direction: row; /* Definindo a direção dos itens como linha */
+            flex-flow: row nowrap; /* Definindo o fluxo dos itens como linha sem quebra */
+            justify-content: space-evenly; /* Distribuindo os itens com espaçamento igual */
+            align-items: flex-start; ; /* Alinhando os itens no início do contêiner */ 
+        }
+
+        div.item {
+            background-color:darkorange;
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exempolo de bloco A</div>
+        <div class="item">Exempolo de bloco B</div>
+        <div class="item">Exempolo de bloco C</div>
+        <div class="item">Exempolo de bloco D</div>
+        <div class="item">Exempolo de bloco E</div>
+        <div class="item">Exempolo de bloco F</div>
+    </div>
+    
+</body>
+</html>
