@@ -14,7 +14,7 @@ body {
 
  h1 {
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 1.2em;
   padding-bottom: 10px;;
 }
 
@@ -47,7 +47,7 @@ article.text-media {
 } 
 
 article > div.text {
-    flex: 1 1 400px;
+    flex: 1 1 500px; 
 }
 article div.media {
     flex: 1 0 400px;
@@ -56,7 +56,7 @@ article div.media {
 div.media img {
     display: block;
     margin: auto;
-    width: 300px;
+    width: 350px;
     padding: 10px;
 }
 
