@@ -4,7 +4,7 @@ div.media img {
     display: block;
     margin: auto;
     /*width: 90vw;*/
-    max-width: 300px;
+    max-width: 90vw;
     padding: 10px;
 }
 div.media iframe {
@@ -12,5 +12,5 @@ div.media iframe {
     
     margin: left auto;
     /*width: 90vw;*/
-    max-width: 300px;
+    max-width: 90vw;
 }
