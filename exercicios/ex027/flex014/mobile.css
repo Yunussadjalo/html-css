@@ -9,8 +9,8 @@ div.media img {
 }
 div.media iframe {
     display: block;
-    margin: auto;
+    
+    margin: left auto;
     /*width: 90vw;*/
     max-width: 300px;
-    padding: 10px;
 }
