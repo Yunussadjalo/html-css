@@ -12,13 +12,13 @@ body {
   line-height: 1.5em; 
 }
 
- h1 {
-  font-size: 2em;
+ h1, h2 {
+  margin-bottom: 20px;
   line-height: 1.2em;
-  padding-bottom: 10px;;
+  text-align: left;
 }
 
-p, h2 { 
+p { 
     margin-bottom: 10px;
     text-align: justify;
 }
