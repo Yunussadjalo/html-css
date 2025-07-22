@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site leste fm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="caixa" id="topo">
+            <div class="logo">
+                <img src="imagens/logolfm200.png" alt="Logo da Leste FM">
+            </div>
+            <div class="titulo">
+                <h1>a frequência da zona leste</h1>
+        </header>
+        <nav class="caixa" id="menu">
+            <div>
+                <a href="">Início</a>
+                <a href="">Programação</a>
+                <a href="">Notícias</a>
+                <a href="">Contato</a>
+                <a href="">Sobre</a>
+            </div>
+            <div class="radio">
+                <button id="playRadio">Ouvir rádio ao vivo</button>
+                <audio id="playerRadio" src="URL_DO_STREAMING" controls style="display:none;"></audio>
+        </nav>
+    
+        <main class="caixa" id="principal">
+            Principal
+        </main>
+        <aside class="caixa" id="secundario">
+            Secundário
+        </aside>
+        <footer class="caixa" id="rodape">
+            Rodapé
+        </footer>
+    </div>
+
+    <script>
+        const btn = document.getElementById('playRadio');
+        const player = document.getElementById('playerRadio');
+
+        btn.addEventListener('click', function() {
+            player.style.display = 'block';
+            player.play();
+            btn.style.display = 'none'; // Esconde o botão após clicar
+        });
+    </script>
+</body>
+</html>
