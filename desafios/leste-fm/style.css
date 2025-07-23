@@ -30,10 +30,9 @@ body{
 
 div.container{
     background-color: #f0f0f0;
-    width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: 80px 50px 1fr 40px / 1fr 200px;
+    grid-template: 100px 50px 1fr 40px / 1fr 200px;
     gap: px;
 }
 .caixa{
@@ -43,14 +42,13 @@ div.container{
 }
 
 #topo {
-   /* background-color: #8e9091;*/
     grid-area: 1 / 1 / -4 / -1;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    padding: 10px;  
-    border: 2px solid #400202; 
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px; 
+    border-bottom: 8px solid #7b0505
 }
 
 .titulo {
@@ -58,17 +56,15 @@ div.container{
     font-size: 1em;
     margin-top: 30px;
     margin-left: 5px;
-
-    flex: 1 1 auto; /* Flex-grow, flex-shrink, and flex-basis */
 }
 
 .logo img{
     width: 100px;
     height: 60px;
+    margin-left: 10px;
 }
 
 #menu{
-    background-color: #ac0808;
     grid-area: 2 / 1 / -3 / -1;
     display: flex;
     justify-content: space-between;
@@ -80,14 +76,17 @@ div.container{
 }
 
 #menu a{
-    color: white;
+    color: #7b0505;
     text-decoration: none;
     padding: 10px;
     margin: 0 5px;
     font-size: 1.2em;
 }
 #menu a:hover{
-    color: #400202;
+    color: white;
+    background-color: #400202;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
 }
 
 div.radio audio{
@@ -95,10 +94,48 @@ div.radio audio{
     height: 30px;
 }
 
+div.radio button{
+    background-color: #7b0505;
+    color: white;
+}
+
 #principal{
     grid-area: 3 / 1 / -2 / 2;
     margin-bottom: 10px;
     margin-right: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ultimas-noticias{
+    border: 2px solid #400202;
+    margin: 10px;
+    padding: 10px;
+}
+
+#artigo1 {
+    flex: 1 1 auto;
+    align-self: center; 
+    margin: ;
+}
+
+#artigo2 {
+    flex: 1 1 300px; 
+    align-self: flex-start;
+}
+#artigo3 {
+    flex: 1 1 300px; 
+    align-self: flex-end;
+}
+#artigo4 {
+    flex: 1 1 300px; 
+    align-self: flex-start;
+}
+
+#artigo5 {
+    flex: 1 1 300px; 
+    align-self: flex-end;
 }
 
 #secundario{
@@ -113,4 +150,5 @@ div.radio audio{
     text-align: center;
     padding: 10px;
     grid-area: 4 / 1 / -1 / -1;
+    height: 100px;
 }
