@@ -70,22 +70,22 @@ div.container{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
+    border: 1px solid #7b0505;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     
 }
 
 #menu a{
-    color: #7b0505;
+    color: #400202;
     text-decoration: none;
     padding: 10px;
     margin: 0 5px;
     font-size: 1.2em;
 }
 #menu a:hover{
-    color: white;
-    background-color: #400202;
-    border-radius: 15px;
+    color: #7b0505;
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
@@ -109,7 +109,7 @@ div.radio button{
 }
 
 .ultimas-noticias{
-    border: 2px solid #400202;
+    border:  ;
     margin: 10px;
     padding: 10px;
 }
@@ -144,6 +144,7 @@ div.radio button{
     margin-bottom: 10px;
 
 }
+
 #rodape{
     background-color: #400202;
     color: white;

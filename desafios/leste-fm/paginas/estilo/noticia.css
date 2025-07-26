@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+div.container{
+    background-color: #7b7b7b;
+    height: 100vh;
+    display: grid;
+    grid-template: 100px 50px 1fr 40px / 1fr;
+    gap:px;
+}
+
+.caixa{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#topo {
+    grid-area: 1 / 1 / -4 / -1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px; 
+    border-bottom: 8px solid #7b0505;
+    
+
+}
+
+.titulo {
+    color:#400202;
+    font-size: 1em;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.logo img{
+    width: 100px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+#menu{
+    grid-area: 2 / 1 / -3 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #7b0505;
+    
+}
+
+#menu a{
+    color: #400202;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 1.2em;
+}
+#menu a:hover{
+    color: #7b0505;
+    transition: font-size 0.3s ease, color 0.3s ease;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+div.radio audio{
+    width: 200px;
+    height: 30px;
+}
+
+div.radio button{
+    background-color: #7b0505;
+    color: white;
+}
+
+div.radio button:hover{
+    background-color: #400202;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#principal{
+    grid-area: 3 / 1 / -2 / 2;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rodape{
+    background-color: #400202;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    grid-area: 4 / 1 / -1 / -1;
+    height: 100px;
+}
